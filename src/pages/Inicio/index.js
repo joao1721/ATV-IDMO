@@ -15,7 +15,7 @@ export default function Inicio() {
                 <Text style={styles.value}>João Paulo Lima de Souza</Text>
             </View>
             <View style={styles.field}>
-                <Text style={styles.label}>Data atual:</Text>
+                <Text style={styles.label}>Data :</Text>
                 <Text style={styles.value}>30/01/2024</Text>
             </View>
             <View style={styles.field}>
@@ -27,7 +27,7 @@ export default function Inicio() {
                 <Text style={styles.value}>Técnico em Desenvolvimento de Sistemas</Text>
             </View>
             <View style={styles.field}>
-                <Text style={styles.label}>Unidade Curricular:</Text>
+                <Text style={styles.label}>Curricular:</Text>
                 <Text style={styles.value}>INDMO - Interface para Dispositivos Móveis</Text>
             </View>
         </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         padding: 30,
         shadowColor: '#000',
         shadowOffset: {
-            width: 0,
+            width: 10 ,
             height: 3,
         },
         shadowOpacity: 0.27,
@@ -73,12 +73,14 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     label: {
-        flex: 1,
+        flex: 6,
         fontWeight: 'bold',
         color: '#333333',
+        left: -25
     },
     value: {
-        flex: 2,
+        flex: 20,
         color: '#555555',
+        left: 10
     },
-});
+})
